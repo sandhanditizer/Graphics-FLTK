@@ -17,96 +17,6 @@ int main() {
     Point t1{ 0, 0 };
     Simple_window win{ t1, 1500, 750, "Cool Drawy Thing" };
 
-    /*Graph_lib::Polygon p;
-    p.add(Point{ 0, 0 });
-    p.add(Point{ 1500, 0 });
-    p.add(Point{ 1500, 150 });
-    p.set_color(rand_color());
-    p.set_fill_color(rand_color());
-    win.attach(p);
-
-    Graph_lib::Polygon p1;
-    p1.add(Point{ 0, 0 });
-    p1.add(Point{ 1500, 150 });
-    p1.add(Point{ 0, 150 });
-    p1.set_color(rand_color());
-    p1.set_fill_color(Color::white);
-    win.attach(p1);
-
-    Graph_lib::Polygon p2;
-    p2.add(Point{ 0, 150 });
-    p2.add(Point{ 1500, 150 });
-    p2.add(Point{ 1500, 300 });
-    p2.set_color(rand_color());
-    p2.set_fill_color(rand_color());
-    win.attach(p2);
-
-    Graph_lib::Polygon p3;
-    p3.add(Point{ 0, 150 });
-    p3.add(Point{ 0, 300 });
-    p3.add(Point{ 1500, 300 });
-    p3.set_color(rand_color());
-    p3.set_fill_color(Color::white);
-    win.attach(p3);
-
-    Graph_lib::Polygon p4;
-    p4.add(Point{ 0, 300 });
-    p4.add(Point{ 1500, 300 });
-    p4.add(Point{ 1500, 450 });
-    p4.set_color(rand_color());
-    p4.set_fill_color(rand_color());
-    win.attach(p4);
-
-    Graph_lib::Polygon p5;
-    p5.add(Point{ 0, 300 });
-    p5.add(Point{ 0, 450 });
-    p5.add(Point{ 1500, 450 });
-    p5.set_color(rand_color());
-    p5.set_fill_color(Color::white);
-    win.attach(p5);
-
-    Graph_lib::Polygon p6;
-    p6.add(Point{ 0, 450 });
-    p6.add(Point{ 1500, 450 });
-    p6.add(Point{ 1500, 600 });
-    p6.set_color(rand_color());
-    p6.set_fill_color(rand_color());
-    win.attach(p6);
-
-    Graph_lib::Polygon p7;
-    p7.add(Point{ 0, 450 });
-    p7.add(Point{ 0, 600 });
-    p7.add(Point{ 1500, 600 });
-    p7.set_color(rand_color());
-    p7.set_fill_color(Color::white);
-    win.attach(p7);
-
-    Graph_lib::Polygon p8;
-    p8.add(Point{ 0, 600 });
-    p8.add(Point{ 1500, 600 });
-    p8.add(Point{ 1500, 750 });
-    p8.set_color(rand_color());
-    p8.set_fill_color(rand_color());
-    win.attach(p8);
-
-    Graph_lib::Polygon p9;
-    p9.add(Point{ 0, 600 });
-    p9.add(Point{ 0, 750 });
-    p9.add(Point{ 1500, 750 });
-    p9.set_color(rand_color());
-    p9.set_fill_color(Color::white);
-    win.attach(p9);*/
-
-    //----------------------------------- middle circles
-
-    /*Graph_lib::Ellipse aa(Point{ 700, 115 }, 50, 10);
-    aa.set_fill_color(Color::black);
-    win.attach(aa);
-
-    Circle a(Point{ 750, 75 }, 40);
-    a.set_fill_color(rand_color());
-    win.attach(a);*/
-
     Graph_lib::Polygon bg;
     bg.add(Point{ 0,0 });
     bg.add(Point{ 1500,0 });
@@ -148,49 +58,9 @@ int main() {
     ball.set_fill_color(Color::white);
     win.attach(ball);
 
-   /* Circle a4(Point{ 750, 375 }, 40);
-    a4.set_fill_color(rand_color());
-    win.attach(a4);
-
-    Circle a2(Point{ 750, 525 }, 40);
-    a2.set_fill_color(rand_color());
-    win.attach(a2);
-
-    Circle a3(Point{ 750, 675 }, 40);
-    a3.set_fill_color(rand_color());
-    win.attach(a3);*/
-
-    //-------------------------------- right circles
-
-   /* Circle b(Point{ 375, 0 }, 40);
-    b.set_fill_color(rand_color());
-    win.attach(b);
-
-    Circle b1(Point{ 375, 150 }, 40);
-    b1.set_fill_color(rand_color());
-    win.attach(b1);
-
-    Circle b2(Point{ 375, 300 }, 40);
-    b2.set_fill_color(rand_color());
-    win.attach(b2);
-
-    Circle b3(Point{ 375, 450 }, 40);
-    b3.set_fill_color(rand_color());
-    win.attach(b3);
-
-    Circle b4(Point{ 375, 600 }, 40);
-    b4.set_fill_color(rand_color());
-    win.attach(b4);
-
-    Circle b5(Point{ 375, 750 }, 40);
-    b5.set_fill_color(rand_color());
-    win.attach(b5);*/
-
-    //-------------------------------
-
     win.wait_for_button();
 }
-
+// For if I evever wanted to use these for making random things
 int rand_int(int min, int max) {
     static std::random_device rd;
     static std::default_random_engine engine{ rd() };
